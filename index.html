@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>주식 수익률 계산기</title>
+  <style>
+    body {
+      font-family: 'Pretendard', sans-serif;
+      background: #f9f9f9;
+      padding: 30px;
+      max-width: 480px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      font-weight: 600;
+      display: block;
+      margin-top: 18px;
+      margin-bottom: 6px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      margin-top: 24px;
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      background: #0073e6;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #005bb5;
+    }
+    #result {
+      margin-top: 24px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+  <h2>📈 주식 수익률 계산기</h2>
+
+  <label for="buyPrice">매수 금액 (₩)</label>
+  <input type="number" id="buyPrice" placeholder="예: 10000" />
+
+  <label for="sellPrice">매도 금액 (₩)</label>
+  <input type="number" id="sellPrice" placeholder="예: 12000" />
+
+  <label for="quantity">수량 (주)</label>
+  <input type="number" id="quantity" placeholder="예: 100" />
+
+  <button onclick="calculate()">수익률 계산하기</button>
+
+  <div id="result">결과가 여기에 표시됩니다.</div>
+
+  <script>
+    function calculate() {
+      const buy = parseFloat(document.getElementById("buyPrice").value);
+      const sell = parseFloat(document.getElementById("sellPrice").value);
+      const qty = parseFloat(document.getElementById("quantity").value);
+
+      if (isNaN(buy) || isNaN(sell) || isNaN(qty)) {
+        document.getElementById("result").innerText = "정확한 값을 입력해주세요.";
+        return;
+      }
+
+      const totalBuy = buy * qty;
+      const totalSell = sell * qty;
+      const profit = totalSell - totalBuy;
+      const rate = (profit / totalBuy) * 100;
+
+      document.getElementById("result").innerText =
+        `총 손익: ${profit.toLocaleString()}원 (수익률: ${rate.toFixed(2)}%)`;
+    }
+  </script>
+</body>
+</html>
