@@ -1,0 +1,17 @@
+{
+  "name": "yt-auto",
+  "version": "0.1.0",
+  "private": true,
+  "description": "YouTube video automation pipeline — JSON spec to rendered video",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=packages/core",
+    "dev": "npm run dev --workspace=packages/core",
+    "yt": "npm run cli --workspace=packages/core --"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

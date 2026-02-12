@@ -1,0 +1,198 @@
+{
+  "version": "1.0",
+  "title": "AI 기초 강좌 — 머신러닝이란?",
+  "output": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "format": "mp4",
+    "codec": "libx264",
+    "crf": 23,
+    "preset": "medium"
+  },
+  "scenes": [
+    {
+      "id": "intro",
+      "duration": 5,
+      "background": { "type": "color", "value": "#0f0f23" },
+      "layers": [
+        {
+          "type": "text",
+          "content": "AI 기초 강좌",
+          "style": {
+            "font": "NotoSansKR",
+            "size": 72,
+            "color": "#00d4ff",
+            "bold": true,
+            "outline": 2,
+            "outlineColor": "#000000"
+          },
+          "position": { "x": "center", "y": "center" },
+          "animation": { "enter": "fadeIn", "enterDuration": 1 }
+        },
+        {
+          "type": "text",
+          "content": "머신러닝이란 무엇인가?",
+          "start": 1.5,
+          "style": {
+            "font": "NotoSansKR",
+            "size": 36,
+            "color": "#cccccc"
+          },
+          "position": { "x": "center", "y": 620 },
+          "animation": { "enter": "slideUp", "enterDuration": 0.8 }
+        }
+      ],
+      "transition": { "type": "crossfade", "duration": 0.5 }
+    },
+    {
+      "id": "definition",
+      "duration": 8,
+      "background": { "type": "color", "value": "#1a1a2e" },
+      "layers": [
+        {
+          "type": "text",
+          "content": "머신러닝 (Machine Learning)",
+          "style": {
+            "font": "NotoSansKR",
+            "size": 54,
+            "color": "#ffffff",
+            "bold": true
+          },
+          "position": { "x": "center", "y": 180 }
+        },
+        {
+          "type": "shape",
+          "shape": "rounded-rect",
+          "position": { "x": 260, "y": 300 },
+          "size": { "width": 1400, "height": 400 },
+          "color": "#16213e",
+          "opacity": 0.8,
+          "borderRadius": 20
+        },
+        {
+          "type": "text",
+          "content": "데이터를 통해 패턴을 학습하고\n스스로 성능을 개선하는 알고리즘",
+          "start": 1,
+          "style": {
+            "font": "NotoSansKR",
+            "size": 40,
+            "color": "#e0e0e0",
+            "lineSpacing": 1.5,
+            "align": "center"
+          },
+          "position": { "x": "center", "y": 420 },
+          "animation": { "enter": "fadeIn", "enterDuration": 0.6 }
+        }
+      ],
+      "transition": { "type": "crossfade", "duration": 0.5 }
+    },
+    {
+      "id": "types",
+      "duration": 10,
+      "background": { "type": "color", "value": "#16213e" },
+      "layers": [
+        {
+          "type": "text",
+          "content": "머신러닝의 3가지 유형",
+          "style": {
+            "font": "NotoSansKR",
+            "size": 54,
+            "color": "#00d4ff",
+            "bold": true
+          },
+          "position": { "x": "center", "y": 120 }
+        },
+        {
+          "type": "text",
+          "content": "1. 지도학습 (Supervised)",
+          "start": 1,
+          "style": { "font": "NotoSansKR", "size": 36, "color": "#4ecca3" },
+          "position": { "x": 300, "y": 320 },
+          "animation": { "enter": "slideLeft", "enterDuration": 0.5 }
+        },
+        {
+          "type": "text",
+          "content": "2. 비지도학습 (Unsupervised)",
+          "start": 3,
+          "style": { "font": "NotoSansKR", "size": 36, "color": "#ffd369" },
+          "position": { "x": 300, "y": 450 },
+          "animation": { "enter": "slideLeft", "enterDuration": 0.5 }
+        },
+        {
+          "type": "text",
+          "content": "3. 강화학습 (Reinforcement)",
+          "start": 5,
+          "style": { "font": "NotoSansKR", "size": 36, "color": "#fc5185" },
+          "position": { "x": 300, "y": 580 },
+          "animation": { "enter": "slideLeft", "enterDuration": 0.5 }
+        }
+      ],
+      "transition": { "type": "fade-black", "duration": 0.8 }
+    },
+    {
+      "id": "outro",
+      "duration": 4,
+      "background": { "type": "color", "value": "#0f0f23" },
+      "layers": [
+        {
+          "type": "text",
+          "content": "구독 & 좋아요 부탁드려요!",
+          "style": {
+            "font": "NotoSansKR",
+            "size": 48,
+            "color": "#ff4444",
+            "bold": true,
+            "outline": 2,
+            "outlineColor": "#000000"
+          },
+          "position": { "x": "center", "y": "center" },
+          "animation": { "enter": "zoomIn", "exit": "fadeOut" }
+        }
+      ],
+      "transition": { "type": "none" }
+    }
+  ],
+  "audio": {
+    "tracks": [
+      {
+        "type": "bgm",
+        "src": "../../assets/music/bgm_chill.mp3",
+        "volume": 0.25,
+        "fadeIn": 2,
+        "fadeOut": 3,
+        "loop": true
+      }
+    ],
+    "master": { "volume": 1, "normalize": true }
+  },
+  "subtitles": [
+    { "start": 0,    "end": 3,    "text": "안녕하세요, AI 기초 강좌입니다" },
+    { "start": 5.5,  "end": 9,    "text": "머신러닝이란 데이터를 통해 학습하는 알고리즘입니다" },
+    { "start": 13,   "end": 16,   "text": "지도학습은 정답이 있는 데이터로 학습합니다" },
+    { "start": 16,   "end": 19,   "text": "비지도학습은 정답 없이 패턴을 찾습니다" },
+    { "start": 19,   "end": 22,   "text": "강화학습은 보상을 통해 행동을 학습합니다" },
+    { "start": 23,   "end": 26.5, "text": "구독과 좋아요 부탁드립니다!" }
+  ],
+  "thumbnail": {
+    "enabled": true,
+    "width": 1280,
+    "height": 720,
+    "source": { "type": "scene", "sceneId": "intro", "timestamp": 2.5 },
+    "overlays": [
+      {
+        "type": "text",
+        "content": "머신러닝 완벽 정리!",
+        "style": {
+          "font": "NotoSansKR",
+          "size": 80,
+          "color": "#FFD700",
+          "bold": true,
+          "outline": 4,
+          "outlineColor": "#000000"
+        },
+        "position": { "x": "center", "y": "center" }
+      }
+    ]
+  }
+}
