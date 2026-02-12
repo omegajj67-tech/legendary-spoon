@@ -1,0 +1,13 @@
+{
+  "name": "@yt-auto/studio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "React-based preview and editing UI for yt-auto specs (planned)",
+  "type": "module",
+  "scripts": {
+    "dev": "echo 'Studio is not yet implemented. See packages/core for the pipeline.'"
+  },
+  "dependencies": {
+    "@yt-auto/core": "*"
+  }
+}

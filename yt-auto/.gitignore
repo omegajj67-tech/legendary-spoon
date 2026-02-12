@@ -1,0 +1,12 @@
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Rendered outputs
+projects/**/jobs/*/render.*
+projects/**/jobs/*/thumb.png
+projects/**/jobs/*/_thumb_*.png
+
+# OS
+.DS_Store
+Thumbs.db
