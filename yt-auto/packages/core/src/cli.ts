@@ -120,7 +120,7 @@ program
               {
                 type: "text",
                 content: "Hello World",
-                style: { font: "NotoSansKR", size: 64, color: "#FFFFFF" },
+                style: { font: "../../assets/fonts/NotoSansKR-Regular.ttf", size: 64, color: "#FFFFFF" },
                 position: { x: "center", y: "center" },
               },
             ],

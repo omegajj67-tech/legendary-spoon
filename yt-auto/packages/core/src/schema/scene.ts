@@ -26,7 +26,7 @@ const TextLayerSchema = z.object({
   start: z.number().min(0).default(0),
   duration: z.number().positive().optional(),
   style: z.object({
-    font: z.string().default("NotoSansKR"),
+    font: z.string().default("../../assets/fonts/NotoSansKR-Regular.ttf"),
     size: z.number().positive().default(48),
     color: z.string().default("#FFFFFF"),
     outline: z.number().min(0).default(0),

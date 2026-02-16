@@ -5,7 +5,7 @@ const SubtitleEntrySchema = z.object({
   end: z.number().positive(),
   text: z.string().min(1),
   style: z.object({
-    font: z.string().default("NotoSansKR"),
+    font: z.string().default("../../assets/fonts/NotoSansKR-Regular.ttf"),
     size: z.number().positive().default(32),
     color: z.string().default("#FFFFFF"),
     outline: z.number().min(0).default(2),
