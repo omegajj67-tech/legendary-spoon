@@ -1,0 +1,51 @@
+{
+  "version": "1.0",
+  "title": "My Video",
+  "output": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "format": "mp4"
+  },
+  "scenes": [
+    {
+      "id": "intro",
+      "duration": 5,
+      "background": {
+        "type": "color",
+        "value": "#1a1a2e"
+      },
+      "layers": [
+        {
+          "type": "text",
+          "content": "Hello World",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 64,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": "center"
+          }
+        }
+      ],
+      "transition": {
+        "type": "crossfade",
+        "duration": 0.5
+      }
+    }
+  ],
+  "audio": {
+    "tracks": []
+  },
+  "subtitles": [],
+  "thumbnail": {
+    "enabled": true,
+    "source": {
+      "type": "scene",
+      "sceneId": "intro",
+      "timestamp": 2
+    }
+  }
+}
