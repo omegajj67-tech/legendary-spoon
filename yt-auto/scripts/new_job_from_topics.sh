@@ -5,6 +5,10 @@ PROJECT_DIR="${1:-projects/my-channel}"
 COUNT="${2:-30}"
 DURATION="${3:-10}"
 
+# B안 기본값: 줄바꿈 18자 기준, 최대 2줄, 말줄임(…)
+WRAP_CHARS="${4:-18}"
+MAX_LINES="${5:-2}"
+
 TOPICS_FILE="$PROJECT_DIR/inputs/topics.txt"
 if [[ ! -f "$TOPICS_FILE" ]]; then
   echo "ERROR: topics file not found: $TOPICS_FILE" >&2
@@ -16,7 +20,7 @@ JOB="$PROJECT_DIR/jobs/${STAMP}_${COUNT}scenes_topics"
 
 node packages/core/dist/cli.js init "$JOB" >/dev/null
 
-node - <<'NODE' "$JOB" "$TOPICS_FILE" "$COUNT" "$DURATION"
+node - "$JOB" "$TOPICS_FILE" "$COUNT" "$DURATION" "$WRAP_CHARS" "$MAX_LINES" <<'NODE'
 const fs = require("fs");
 const path = require("path");
 
@@ -24,6 +28,8 @@ const job = process.argv[2];
 const topicsFile = process.argv[3];
 const count = Number(process.argv[4] || 30);
 const duration = Number(process.argv[5] || 10);
+const wrapChars = Number(process.argv[6] || 18);
+const maxLines = Number(process.argv[7] || 2);
 
 const specPath = path.join(job, "spec.json");
 const metaPath = path.join(job, "meta.json");
@@ -38,17 +44,64 @@ if (Number.isFinite(count) && count > 0) topics = topics.slice(0, count);
 
 const FONT = "../../assets/fonts/NotoSansKR-Regular.ttf";
 
+function wrapText(input, charsPerLine, maxLines) {
+  const t = String(input ?? "").trim();
+  if (!t) return "";
+
+  // 공백이 있으면 "단어 기준", 없으면 "글자 기준"으로 줄바꿈
+  const tokens = /\s/.test(t) ? t.split(/\s+/) : Array.from(t);
+  const lines = [];
+  let line = "";
+
+  for (const tok of tokens) {
+    const sep = (line && /\s/.test(t)) ? " " : "";
+    const next = line + sep + tok;
+
+    if (next.length <= charsPerLine) {
+      line = next;
+      continue;
+    }
+
+    if (line) lines.push(line);
+    line = tok;
+
+    if (lines.length >= maxLines) break;
+  }
+  if (lines.length < maxLines && line) lines.push(line);
+
+  // 말줄임 처리
+  if (tokens.length && lines.length >= maxLines) {
+    const joined = lines.join("\n");
+    const reconstructedLen = joined.replace(/\n/g, "").length;
+    const originalLen = (/\s/.test(t) ? t.replace(/\s+/g, " ") : t).length;
+
+    if (reconstructedLen < originalLen) {
+      let last = lines[maxLines - 1] || "";
+      if (last.length >= 1) {
+        last = last.slice(0, Math.max(0, charsPerLine - 1)) + "…";
+      } else {
+        last = "…";
+      }
+      lines[maxLines - 1] = last;
+    }
+  }
+
+  return lines.join("\n");
+}
+
 const mkScene = (i, text, total) => {
   const id = `s${String(i).padStart(2,"0")}`;
   const idx = String(i).padStart(2,"0");
+  const wrapped = wrapText(text, wrapChars, maxLines);
+
   return {
     id,
     duration,
     background: { type:"color", value:(i%2 ? "#0B1020" : "#111827") },
     layers: [
-      { type:"text", content:`SCENE ${idx}`, style:{ font: FONT, size:72, color:"#FFFFFF" }, position:{ x:"center", y:320 } },
-      { type:"text", content:text, style:{ font: FONT, size:44, color:"#FFFFFF" }, position:{ x:"center", y:560 } },
-      { type:"text", content:`(10초 씬) ${idx}/${total}`, style:{ font: FONT, size:28, color:"#D1D5DB" }, position:{ x:"center", y:940 } }
+      { type:"text", content:`SCENE ${idx}`, style:{ font: FONT, size:72, color:"#FFFFFF" }, position:{ x:"center", y:300 } },
+      { type:"text", content: wrapped, style:{ font: FONT, size:44, color:"#FFFFFF" }, position:{ x:"center", y:560 } },
+      { type:"text", content:`(${duration}초 씬) ${idx}/${total}`, style:{ font: FONT, size:28, color:"#D1D5DB" }, position:{ x:"center", y:940 } }
     ],
     transition: { type:"crossfade", duration:0.5 }
   };
@@ -72,6 +125,8 @@ fs.writeFileSync(metaPath, JSON.stringify(meta, null, 2) + "\n");
 
 console.log("JOB=" + job);
 console.log("SCENES=" + topics.length);
+console.log("WRAP_CHARS=" + wrapChars);
+console.log("MAX_LINES=" + maxLines);
 NODE
 
 node packages/core/dist/cli.js render "$JOB" >/dev/null
