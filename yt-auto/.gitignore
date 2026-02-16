@@ -24,3 +24,6 @@ projects/**/jobs/**
 !projects/**/jobs/**/
 !projects/**/jobs/**/spec.json
 !projects/**/jobs/**/meta.json
+
+# local exports (mp4/png/upload package)
+/exports/
