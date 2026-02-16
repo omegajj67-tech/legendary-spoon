@@ -18,3 +18,9 @@ package-lock.json
 # generated outputs
 projects/my-channel/jobs/**/render.mp4
 projects/my-channel/jobs/**/thumb.png
+
+# auto-generated job outputs: keep spec/meta only
+projects/**/jobs/**
+!projects/**/jobs/**/
+!projects/**/jobs/**/spec.json
+!projects/**/jobs/**/meta.json
