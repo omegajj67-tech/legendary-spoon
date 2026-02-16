@@ -1,0 +1,15 @@
+{
+  "title": "My Video",
+  "description": "Video description here",
+  "tags": [
+    "tag1",
+    "tag2"
+  ],
+  "duration": 5,
+  "resolution": "1920x1080",
+  "createdAt": "2026-02-16T09:37:47.840Z",
+  "files": {
+    "video": "render.mp4",
+    "thumbnail": "thumb.png"
+  }
+}

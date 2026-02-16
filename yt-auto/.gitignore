@@ -10,3 +10,11 @@ projects/**/jobs/*/_thumb_*.png
 # OS
 .DS_Store
 Thumbs.db
+.DS_Store
+../.DS_Store
+../package-lock.json
+package-lock.json
+
+# generated outputs
+projects/my-channel/jobs/**/render.mp4
+projects/my-channel/jobs/**/thumb.png
