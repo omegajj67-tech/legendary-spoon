@@ -35,26 +35,37 @@ const specPath = path.join(job, "spec.json");
 const metaPath = path.join(job, "meta.json");
 
 const raw = fs.readFileSync(topicsFile, "utf8");
+const cleanLine = (s) => String(s ?? "")
+  .replace(/\uFEFF/g, "")
+  .replace(/[\u200B-\u200D\u2060]/g, "")
+  .replace(/\u00A0/g, " ")
+  .replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/g, "")
+  .normalize("NFC")
+  .replace(/\s+/g, " ")
+  .trim();
+
 let topics = raw
   .split(/\r?\n/)
-  .map(s => s.trim())
+  .map(s => cleanLine(s))
   .filter(Boolean);
 
 if (Number.isFinite(count) && count > 0) topics = topics.slice(0, count);
 
 const FONT = "../../assets/fonts/NotoSansKR-Regular.ttf";
 
-function wrapText(input, charsPerLine, maxLines) {
-  const t = String(input ?? "").trim();
-  if (!t) return "";
+function wrapLines(input, charsPerLine, maxLines) {
+  const t = cleanLine(input);
+  if (!t) return [""];
 
-  // 공백이 있으면 "단어 기준", 없으면 "글자 기준"으로 줄바꿈
-  const tokens = /\s/.test(t) ? t.split(/\s+/) : Array.from(t);
+  // 공백이 있으면 단어 기준, 없으면 글자 기준
+  const hasSpace = /\s/.test(t);
+  const tokens = hasSpace ? t.split(/\s+/) : Array.from(t);
+
   const lines = [];
   let line = "";
 
   for (const tok of tokens) {
-    const sep = (line && /\s/.test(t)) ? " " : "";
+    const sep = (line && hasSpace) ? " " : "";
     const next = line + sep + tok;
 
     if (next.length <= charsPerLine) {
@@ -69,30 +80,32 @@ function wrapText(input, charsPerLine, maxLines) {
   }
   if (lines.length < maxLines && line) lines.push(line);
 
-  // 말줄임 처리
-  if (tokens.length && lines.length >= maxLines) {
-    const joined = lines.join("\n");
-    const reconstructedLen = joined.replace(/\n/g, "").length;
-    const originalLen = (/\s/.test(t) ? t.replace(/\s+/g, " ") : t).length;
-
-    if (reconstructedLen < originalLen) {
-      let last = lines[maxLines - 1] || "";
-      if (last.length >= 1) {
-        last = last.slice(0, Math.max(0, charsPerLine - 1)) + "…";
-      } else {
-        last = "…";
-      }
-      lines[maxLines - 1] = last;
-    }
+  // 말줄임 처리 ("..." 사용)
+  const reconstructed = lines.join("");
+  const original = hasSpace ? t.replace(/\s+/g, "") : t;
+  if (lines.length >= maxLines && reconstructed.length < original.length) {
+    let last = lines[maxLines - 1] || "";
+    last = (last.length >= 3)
+      ? last.slice(0, Math.max(0, charsPerLine - 3)) + "..."
+      : "...";
+    lines[maxLines - 1] = last;
   }
 
-  return lines.join("\n");
+  return lines.slice(0, maxLines);
 }
 
 const mkScene = (i, text, total) => {
   const id = `s${String(i).padStart(2,"0")}`;
   const idx = String(i).padStart(2,"0");
-  const wrapped = wrapText(text, wrapChars, maxLines);
+  const lines = wrapLines(text, wrapChars, maxLines);
+  const baseY = 560;
+  const lineH = 60;
+  const textLayers = lines.map((ln, k) => ({
+    type: "text",
+    content: ln,
+    style: { font: FONT, size: 44, color: "#FFFFFF" },
+    position: { x: "center", y: baseY + (k * lineH) }
+  }));
 
   return {
     id,
@@ -100,7 +113,7 @@ const mkScene = (i, text, total) => {
     background: { type:"color", value:(i%2 ? "#0B1020" : "#111827") },
     layers: [
       { type:"text", content:`SCENE ${idx}`, style:{ font: FONT, size:72, color:"#FFFFFF" }, position:{ x:"center", y:300 } },
-      { type:"text", content: wrapped, style:{ font: FONT, size:44, color:"#FFFFFF" }, position:{ x:"center", y:560 } },
+      ...textLayers,
       { type:"text", content:`(${duration}초 씬) ${idx}/${total}`, style:{ font: FONT, size:28, color:"#D1D5DB" }, position:{ x:"center", y:940 } }
     ],
     transition: { type:"crossfade", duration:0.5 }
