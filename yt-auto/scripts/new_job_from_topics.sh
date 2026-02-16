@@ -94,7 +94,7 @@ function wrapLines(input, charsPerLine, maxLines) {
   return lines.slice(0, maxLines);
 }
 
-const mkScene = (i, text, total) => {
+const mkScene = (i, text, total, isThumb) => {
   const id = `s${String(i).padStart(2,"0")}`;
   const idx = String(i).padStart(2,"0");
   const lines = wrapLines(text, wrapChars, maxLines);
@@ -106,15 +106,26 @@ const mkScene = (i, text, total) => {
     style: { font: FONT, size: 44, color: "#FFFFFF" },
     position: { x: "center", y: baseY + (k * lineH) }
   }));
+  
+  const thumbText = (lines[0] || "").trim();
+  const thumbLayers = isThumb ? ([
+    { type:"text", content:"THUMBNAIL", style:{ font: FONT, size:28, color:"#FDE68A" }, position:{ x:120, y:120 } },
+    { type:"text", content:thumbText, style:{ font: FONT, size:96, color:"#FFFFFF" }, position:{ x:"center", y:520 } }
+  ]) : [];
+
 
   return {
     id,
     duration,
     background: { type:"color", value:(i%2 ? "#0B1020" : "#111827") },
     layers: [
-      { type:"text", content:`SCENE ${idx}`, style:{ font: FONT, size:72, color:"#FFFFFF" }, position:{ x:"center", y:300 } },
+      ...(isThumb ? [] : [
+        { type:"text", content:`SCENE ${idx}`, style:{ font: FONT, size:72, color:"#FFFFFF" }, position:{ x:"center", y:300 } }
+      ]),
       ...textLayers,
-      { type:"text", content:`(${duration}초 씬) ${idx}/${total}`, style:{ font: FONT, size:28, color:"#D1D5DB" }, position:{ x:"center", y:940 } }
+      ...(isThumb ? [] : [
+        { type:"text", content:`(${duration}초 씬) ${idx}/${total}`, style:{ font: FONT, size:28, color:"#D1D5DB" }, position:{ x:"center", y:940 } }
+      ])
     ],
     transition: { type:"crossfade", duration:0.5 }
   };
@@ -124,8 +135,8 @@ const spec = JSON.parse(fs.readFileSync(specPath, "utf8"));
 spec.title = `Topics → ${topics.length} Scenes`;
 spec.audio = { tracks: [] };
 spec.subtitles = [];
-spec.thumbnail = { enabled:true, source:{ type:"scene", sceneId:"s01", timestamp:2 } };
-spec.scenes = topics.map((t, k) => mkScene(k+1, t, topics.length));
+spec.thumbnail = { enabled:true, source:{ type:"scene", sceneId:"s01", timestamp:0.2 } };
+spec.scenes = topics.map((t, k) => mkScene(k+1, t, topics.length, k===0));
 
 fs.writeFileSync(specPath, JSON.stringify(spec, null, 2) + "\n");
 

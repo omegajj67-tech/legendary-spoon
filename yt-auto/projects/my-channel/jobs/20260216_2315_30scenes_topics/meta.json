@@ -1,0 +1,15 @@
+{
+  "title": "Topics → 30 Scenes",
+  "description": "Auto-generated from topics.txt",
+  "tags": [
+    "yt-auto",
+    "topics"
+  ],
+  "duration": 300,
+  "resolution": "1920x1080",
+  "createdAt": "2026-02-16T14:16:18.507Z",
+  "files": {
+    "video": "render.mp4",
+    "thumbnail": "thumb.png"
+  }
+}

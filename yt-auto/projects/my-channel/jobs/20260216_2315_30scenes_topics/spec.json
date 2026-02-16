@@ -1,0 +1,1796 @@
+{
+  "version": "1.0",
+  "title": "Topics → 30 Scenes",
+  "output": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "format": "mp4"
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "duration": 10,
+      "background": {
+        "type": "color",
+        "value": "#0B1020"
+      },
+      "layers": [
+        {
+          "type": "text",
+          "content": "AI 기초 강좌 - 머신러닝이란?",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 560
+          }
+        }
+      ],
+      "transition": {
+        "type": "crossfade",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "s02",
+      "duration": 10,
+      "background": {
+        "type": "color",
+        "value": "#111827"
+      },
+      "layers": [
+        {
+          "type": "text",
+          "content": "SCENE 02",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 72,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 300
+          }
+        },
+        {
+          "type": "text",
+          "content": "AI 기초 강좌 - 딥러닝과 차이",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 560
+          }
+        },
+        {
+          "type": "text",
+          "content": "(10초 씬) 02/30",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 28,
+            "color": "#D1D5DB"
+          },
+          "position": {
+            "x": "center",
+            "y": 940
+          }
+        }
+      ],
+      "transition": {
+        "type": "crossfade",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "s03",
+      "duration": 10,
+      "background": {
+        "type": "color",
+        "value": "#0B1020"
+      },
+      "layers": [
+        {
+          "type": "text",
+          "content": "SCENE 03",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 72,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 300
+          }
+        },
+        {
+          "type": "text",
+          "content": "Python 자동화 - 파일 정리",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 560
+          }
+        },
+        {
+          "type": "text",
+          "content": "스크립트",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 620
+          }
+        },
+        {
+          "type": "text",
+          "content": "(10초 씬) 03/30",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 28,
+            "color": "#D1D5DB"
+          },
+          "position": {
+            "x": "center",
+            "y": 940
+          }
+        }
+      ],
+      "transition": {
+        "type": "crossfade",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "s04",
+      "duration": 10,
+      "background": {
+        "type": "color",
+        "value": "#111827"
+      },
+      "layers": [
+        {
+          "type": "text",
+          "content": "SCENE 04",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 72,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 300
+          }
+        },
+        {
+          "type": "text",
+          "content": "Python 자동화 - 엑셀 일괄",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 560
+          }
+        },
+        {
+          "type": "text",
+          "content": "처리",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 620
+          }
+        },
+        {
+          "type": "text",
+          "content": "(10초 씬) 04/30",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 28,
+            "color": "#D1D5DB"
+          },
+          "position": {
+            "x": "center",
+            "y": 940
+          }
+        }
+      ],
+      "transition": {
+        "type": "crossfade",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "s05",
+      "duration": 10,
+      "background": {
+        "type": "color",
+        "value": "#0B1020"
+      },
+      "layers": [
+        {
+          "type": "text",
+          "content": "SCENE 05",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 72,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 300
+          }
+        },
+        {
+          "type": "text",
+          "content": "Python 자동화 - 이메일",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 560
+          }
+        },
+        {
+          "type": "text",
+          "content": "자동 발송",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 620
+          }
+        },
+        {
+          "type": "text",
+          "content": "(10초 씬) 05/30",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 28,
+            "color": "#D1D5DB"
+          },
+          "position": {
+            "x": "center",
+            "y": 940
+          }
+        }
+      ],
+      "transition": {
+        "type": "crossfade",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "s06",
+      "duration": 10,
+      "background": {
+        "type": "color",
+        "value": "#111827"
+      },
+      "layers": [
+        {
+          "type": "text",
+          "content": "SCENE 06",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 72,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 300
+          }
+        },
+        {
+          "type": "text",
+          "content": "개발자 생산성 - 터미널 필수",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 560
+          }
+        },
+        {
+          "type": "text",
+          "content": "명령 10",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 620
+          }
+        },
+        {
+          "type": "text",
+          "content": "(10초 씬) 06/30",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 28,
+            "color": "#D1D5DB"
+          },
+          "position": {
+            "x": "center",
+            "y": 940
+          }
+        }
+      ],
+      "transition": {
+        "type": "crossfade",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "s07",
+      "duration": 10,
+      "background": {
+        "type": "color",
+        "value": "#0B1020"
+      },
+      "layers": [
+        {
+          "type": "text",
+          "content": "SCENE 07",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 72,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 300
+          }
+        },
+        {
+          "type": "text",
+          "content": "개발자 생산성 - VSCode",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 560
+          }
+        },
+        {
+          "type": "text",
+          "content": "세팅 추천",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 620
+          }
+        },
+        {
+          "type": "text",
+          "content": "(10초 씬) 07/30",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 28,
+            "color": "#D1D5DB"
+          },
+          "position": {
+            "x": "center",
+            "y": 940
+          }
+        }
+      ],
+      "transition": {
+        "type": "crossfade",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "s08",
+      "duration": 10,
+      "background": {
+        "type": "color",
+        "value": "#111827"
+      },
+      "layers": [
+        {
+          "type": "text",
+          "content": "SCENE 08",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 72,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 300
+          }
+        },
+        {
+          "type": "text",
+          "content": "개발자 생산성 - 단축키로 시간",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 560
+          }
+        },
+        {
+          "type": "text",
+          "content": "절약",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 620
+          }
+        },
+        {
+          "type": "text",
+          "content": "(10초 씬) 08/30",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 28,
+            "color": "#D1D5DB"
+          },
+          "position": {
+            "x": "center",
+            "y": 940
+          }
+        }
+      ],
+      "transition": {
+        "type": "crossfade",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "s09",
+      "duration": 10,
+      "background": {
+        "type": "color",
+        "value": "#0B1020"
+      },
+      "layers": [
+        {
+          "type": "text",
+          "content": "SCENE 09",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 72,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 300
+          }
+        },
+        {
+          "type": "text",
+          "content": "Node.js - 프로젝트 구조",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 560
+          }
+        },
+        {
+          "type": "text",
+          "content": "잡는 법",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 620
+          }
+        },
+        {
+          "type": "text",
+          "content": "(10초 씬) 09/30",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 28,
+            "color": "#D1D5DB"
+          },
+          "position": {
+            "x": "center",
+            "y": 940
+          }
+        }
+      ],
+      "transition": {
+        "type": "crossfade",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "s10",
+      "duration": 10,
+      "background": {
+        "type": "color",
+        "value": "#111827"
+      },
+      "layers": [
+        {
+          "type": "text",
+          "content": "SCENE 10",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 72,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 300
+          }
+        },
+        {
+          "type": "text",
+          "content": "Node.js - dotenv",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 560
+          }
+        },
+        {
+          "type": "text",
+          "content": "설정 실수 방지",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 620
+          }
+        },
+        {
+          "type": "text",
+          "content": "(10초 씬) 10/30",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 28,
+            "color": "#D1D5DB"
+          },
+          "position": {
+            "x": "center",
+            "y": 940
+          }
+        }
+      ],
+      "transition": {
+        "type": "crossfade",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "s11",
+      "duration": 10,
+      "background": {
+        "type": "color",
+        "value": "#0B1020"
+      },
+      "layers": [
+        {
+          "type": "text",
+          "content": "SCENE 11",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 72,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 300
+          }
+        },
+        {
+          "type": "text",
+          "content": "Git - 커밋 메시지 규칙 정리",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 560
+          }
+        },
+        {
+          "type": "text",
+          "content": "(10초 씬) 11/30",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 28,
+            "color": "#D1D5DB"
+          },
+          "position": {
+            "x": "center",
+            "y": 940
+          }
+        }
+      ],
+      "transition": {
+        "type": "crossfade",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "s12",
+      "duration": 10,
+      "background": {
+        "type": "color",
+        "value": "#111827"
+      },
+      "layers": [
+        {
+          "type": "text",
+          "content": "SCENE 12",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 72,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 300
+          }
+        },
+        {
+          "type": "text",
+          "content": "Git - 브랜치",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 560
+          }
+        },
+        {
+          "type": "text",
+          "content": "전략(main/dev)",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 620
+          }
+        },
+        {
+          "type": "text",
+          "content": "(10초 씬) 12/30",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 28,
+            "color": "#D1D5DB"
+          },
+          "position": {
+            "x": "center",
+            "y": 940
+          }
+        }
+      ],
+      "transition": {
+        "type": "crossfade",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "s13",
+      "duration": 10,
+      "background": {
+        "type": "color",
+        "value": "#0B1020"
+      },
+      "layers": [
+        {
+          "type": "text",
+          "content": "SCENE 13",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 72,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 300
+          }
+        },
+        {
+          "type": "text",
+          "content": "Git - rebase vs",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 560
+          }
+        },
+        {
+          "type": "text",
+          "content": "merge 핵심",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 620
+          }
+        },
+        {
+          "type": "text",
+          "content": "(10초 씬) 13/30",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 28,
+            "color": "#D1D5DB"
+          },
+          "position": {
+            "x": "center",
+            "y": 940
+          }
+        }
+      ],
+      "transition": {
+        "type": "crossfade",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "s14",
+      "duration": 10,
+      "background": {
+        "type": "color",
+        "value": "#111827"
+      },
+      "layers": [
+        {
+          "type": "text",
+          "content": "SCENE 14",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 72,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 300
+          }
+        },
+        {
+          "type": "text",
+          "content": "GitHub - Actions로",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 560
+          }
+        },
+        {
+          "type": "text",
+          "content": "자동 배포",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 620
+          }
+        },
+        {
+          "type": "text",
+          "content": "(10초 씬) 14/30",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 28,
+            "color": "#D1D5DB"
+          },
+          "position": {
+            "x": "center",
+            "y": 940
+          }
+        }
+      ],
+      "transition": {
+        "type": "crossfade",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "s15",
+      "duration": 10,
+      "background": {
+        "type": "color",
+        "value": "#0B1020"
+      },
+      "layers": [
+        {
+          "type": "text",
+          "content": "SCENE 15",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 72,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 300
+          }
+        },
+        {
+          "type": "text",
+          "content": "Docker - 초보가 헷갈리는",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 560
+          }
+        },
+        {
+          "type": "text",
+          "content": "개념",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 620
+          }
+        },
+        {
+          "type": "text",
+          "content": "(10초 씬) 15/30",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 28,
+            "color": "#D1D5DB"
+          },
+          "position": {
+            "x": "center",
+            "y": 940
+          }
+        }
+      ],
+      "transition": {
+        "type": "crossfade",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "s16",
+      "duration": 10,
+      "background": {
+        "type": "color",
+        "value": "#111827"
+      },
+      "layers": [
+        {
+          "type": "text",
+          "content": "SCENE 16",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 72,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 300
+          }
+        },
+        {
+          "type": "text",
+          "content": "Docker - 이미지/컨테이너",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 560
+          }
+        },
+        {
+          "type": "text",
+          "content": "차이",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 620
+          }
+        },
+        {
+          "type": "text",
+          "content": "(10초 씬) 16/30",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 28,
+            "color": "#D1D5DB"
+          },
+          "position": {
+            "x": "center",
+            "y": 940
+          }
+        }
+      ],
+      "transition": {
+        "type": "crossfade",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "s17",
+      "duration": 10,
+      "background": {
+        "type": "color",
+        "value": "#0B1020"
+      },
+      "layers": [
+        {
+          "type": "text",
+          "content": "SCENE 17",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 72,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 300
+          }
+        },
+        {
+          "type": "text",
+          "content": "API - REST 설계 기본",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 560
+          }
+        },
+        {
+          "type": "text",
+          "content": "원칙",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 620
+          }
+        },
+        {
+          "type": "text",
+          "content": "(10초 씬) 17/30",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 28,
+            "color": "#D1D5DB"
+          },
+          "position": {
+            "x": "center",
+            "y": 940
+          }
+        }
+      ],
+      "transition": {
+        "type": "crossfade",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "s18",
+      "duration": 10,
+      "background": {
+        "type": "color",
+        "value": "#111827"
+      },
+      "layers": [
+        {
+          "type": "text",
+          "content": "SCENE 18",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 72,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 300
+          }
+        },
+        {
+          "type": "text",
+          "content": "API - 인증(JWT) 실전 팁",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 560
+          }
+        },
+        {
+          "type": "text",
+          "content": "(10초 씬) 18/30",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 28,
+            "color": "#D1D5DB"
+          },
+          "position": {
+            "x": "center",
+            "y": 940
+          }
+        }
+      ],
+      "transition": {
+        "type": "crossfade",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "s19",
+      "duration": 10,
+      "background": {
+        "type": "color",
+        "value": "#0B1020"
+      },
+      "layers": [
+        {
+          "type": "text",
+          "content": "SCENE 19",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 72,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 300
+          }
+        },
+        {
+          "type": "text",
+          "content": "DB - 인덱스가 중요한 이유",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 560
+          }
+        },
+        {
+          "type": "text",
+          "content": "(10초 씬) 19/30",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 28,
+            "color": "#D1D5DB"
+          },
+          "position": {
+            "x": "center",
+            "y": 940
+          }
+        }
+      ],
+      "transition": {
+        "type": "crossfade",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "s20",
+      "duration": 10,
+      "background": {
+        "type": "color",
+        "value": "#111827"
+      },
+      "layers": [
+        {
+          "type": "text",
+          "content": "SCENE 20",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 72,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 300
+          }
+        },
+        {
+          "type": "text",
+          "content": "DB - 쿼리 튜닝 기초",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 560
+          }
+        },
+        {
+          "type": "text",
+          "content": "(10초 씬) 20/30",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 28,
+            "color": "#D1D5DB"
+          },
+          "position": {
+            "x": "center",
+            "y": 940
+          }
+        }
+      ],
+      "transition": {
+        "type": "crossfade",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "s21",
+      "duration": 10,
+      "background": {
+        "type": "color",
+        "value": "#0B1020"
+      },
+      "layers": [
+        {
+          "type": "text",
+          "content": "SCENE 21",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 72,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 300
+          }
+        },
+        {
+          "type": "text",
+          "content": "SQL - 자주 쓰는 JOIN",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 560
+          }
+        },
+        {
+          "type": "text",
+          "content": "패턴",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 620
+          }
+        },
+        {
+          "type": "text",
+          "content": "(10초 씬) 21/30",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 28,
+            "color": "#D1D5DB"
+          },
+          "position": {
+            "x": "center",
+            "y": 940
+          }
+        }
+      ],
+      "transition": {
+        "type": "crossfade",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "s22",
+      "duration": 10,
+      "background": {
+        "type": "color",
+        "value": "#111827"
+      },
+      "layers": [
+        {
+          "type": "text",
+          "content": "SCENE 22",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 72,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 300
+          }
+        },
+        {
+          "type": "text",
+          "content": "SQL - GROUP BY 실전",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 560
+          }
+        },
+        {
+          "type": "text",
+          "content": "예제",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 620
+          }
+        },
+        {
+          "type": "text",
+          "content": "(10초 씬) 22/30",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 28,
+            "color": "#D1D5DB"
+          },
+          "position": {
+            "x": "center",
+            "y": 940
+          }
+        }
+      ],
+      "transition": {
+        "type": "crossfade",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "s23",
+      "duration": 10,
+      "background": {
+        "type": "color",
+        "value": "#0B1020"
+      },
+      "layers": [
+        {
+          "type": "text",
+          "content": "SCENE 23",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 72,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 300
+          }
+        },
+        {
+          "type": "text",
+          "content": "웹 - CORS 한 방에 이해",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 560
+          }
+        },
+        {
+          "type": "text",
+          "content": "(10초 씬) 23/30",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 28,
+            "color": "#D1D5DB"
+          },
+          "position": {
+            "x": "center",
+            "y": 940
+          }
+        }
+      ],
+      "transition": {
+        "type": "crossfade",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "s24",
+      "duration": 10,
+      "background": {
+        "type": "color",
+        "value": "#111827"
+      },
+      "layers": [
+        {
+          "type": "text",
+          "content": "SCENE 24",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 72,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 300
+          }
+        },
+        {
+          "type": "text",
+          "content": "웹 - 쿠키/세션/토큰 비교",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 560
+          }
+        },
+        {
+          "type": "text",
+          "content": "(10초 씬) 24/30",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 28,
+            "color": "#D1D5DB"
+          },
+          "position": {
+            "x": "center",
+            "y": 940
+          }
+        }
+      ],
+      "transition": {
+        "type": "crossfade",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "s25",
+      "duration": 10,
+      "background": {
+        "type": "color",
+        "value": "#0B1020"
+      },
+      "layers": [
+        {
+          "type": "text",
+          "content": "SCENE 25",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 72,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 300
+          }
+        },
+        {
+          "type": "text",
+          "content": "보안 - 비밀번호 저장은 이렇게",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 560
+          }
+        },
+        {
+          "type": "text",
+          "content": "(10초 씬) 25/30",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 28,
+            "color": "#D1D5DB"
+          },
+          "position": {
+            "x": "center",
+            "y": 940
+          }
+        }
+      ],
+      "transition": {
+        "type": "crossfade",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "s26",
+      "duration": 10,
+      "background": {
+        "type": "color",
+        "value": "#111827"
+      },
+      "layers": [
+        {
+          "type": "text",
+          "content": "SCENE 26",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 72,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 300
+          }
+        },
+        {
+          "type": "text",
+          "content": "보안 - 환경변수 관리 방법",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 560
+          }
+        },
+        {
+          "type": "text",
+          "content": "(10초 씬) 26/30",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 28,
+            "color": "#D1D5DB"
+          },
+          "position": {
+            "x": "center",
+            "y": 940
+          }
+        }
+      ],
+      "transition": {
+        "type": "crossfade",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "s27",
+      "duration": 10,
+      "background": {
+        "type": "color",
+        "value": "#0B1020"
+      },
+      "layers": [
+        {
+          "type": "text",
+          "content": "SCENE 27",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 72,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 300
+          }
+        },
+        {
+          "type": "text",
+          "content": "2026 개발자 로드맵 - 백엔드",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 560
+          }
+        },
+        {
+          "type": "text",
+          "content": "(10초 씬) 27/30",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 28,
+            "color": "#D1D5DB"
+          },
+          "position": {
+            "x": "center",
+            "y": 940
+          }
+        }
+      ],
+      "transition": {
+        "type": "crossfade",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "s28",
+      "duration": 10,
+      "background": {
+        "type": "color",
+        "value": "#111827"
+      },
+      "layers": [
+        {
+          "type": "text",
+          "content": "SCENE 28",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 72,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 300
+          }
+        },
+        {
+          "type": "text",
+          "content": "2026 개발자 로드맵 - 프론트",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 560
+          }
+        },
+        {
+          "type": "text",
+          "content": "(10초 씬) 28/30",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 28,
+            "color": "#D1D5DB"
+          },
+          "position": {
+            "x": "center",
+            "y": 940
+          }
+        }
+      ],
+      "transition": {
+        "type": "crossfade",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "s29",
+      "duration": 10,
+      "background": {
+        "type": "color",
+        "value": "#0B1020"
+      },
+      "layers": [
+        {
+          "type": "text",
+          "content": "SCENE 29",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 72,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 300
+          }
+        },
+        {
+          "type": "text",
+          "content": "2026 개발자 로드맵 - AI",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 560
+          }
+        },
+        {
+          "type": "text",
+          "content": "(10초 씬) 29/30",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 28,
+            "color": "#D1D5DB"
+          },
+          "position": {
+            "x": "center",
+            "y": 940
+          }
+        }
+      ],
+      "transition": {
+        "type": "crossfade",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "s30",
+      "duration": 10,
+      "background": {
+        "type": "color",
+        "value": "#111827"
+      },
+      "layers": [
+        {
+          "type": "text",
+          "content": "SCENE 30",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 72,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 300
+          }
+        },
+        {
+          "type": "text",
+          "content": "취업 - 포트폴리오 구성법",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 44,
+            "color": "#FFFFFF"
+          },
+          "position": {
+            "x": "center",
+            "y": 560
+          }
+        },
+        {
+          "type": "text",
+          "content": "(10초 씬) 30/30",
+          "style": {
+            "font": "../../assets/fonts/NotoSansKR-Regular.ttf",
+            "size": 28,
+            "color": "#D1D5DB"
+          },
+          "position": {
+            "x": "center",
+            "y": 940
+          }
+        }
+      ],
+      "transition": {
+        "type": "crossfade",
+        "duration": 0.5
+      }
+    }
+  ],
+  "audio": {
+    "tracks": []
+  },
+  "subtitles": [],
+  "thumbnail": {
+    "enabled": true,
+    "source": {
+      "type": "scene",
+      "sceneId": "s01",
+      "timestamp": 0.2
+    }
+  }
+}
